@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/noteListFragment">
+
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="com.example.notesappv2.frag.NoteListFragment"
+        android:label="fragment_note_list"
+        tools:layout="@layout/fragment_note_list">
+
+        <action
+            android:id="@+id/action_noteList_to_searchNote"
+            app:destination="@id/searchNoteFragment" />
+
+
+        <action
+            android:id="@+id/action_noteList_to_noteAdd"
+            app:destination="@id/noteAddFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/noteAddFragment"
+        android:name="com.example.notesappv2.frag.NoteAddFragment"
+        android:label="fragment_note_add"
+        tools:layout="@layout/fragment_note_add">
+
+        <argument
+            android:name="note"
+            android:defaultValue="@null"
+            app:argType="com.example.notesappv2.model.NoteModel"
+            app:nullable="true" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/searchNoteFragment"
+        android:name="com.example.notesappv2.frag.SearchNoteFragment"
+        android:label="fragment_search_note"
+        tools:layout="@layout/fragment_search_note">
+        <action
+            android:id="@+id/action_searchNote_to_noteAdd"
+            app:destination="@id/noteAddFragment" />
+    </dialog>
+
+</navigation>
