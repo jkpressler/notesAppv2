@@ -1,10 +1,9 @@
-package com.example.notesappv2.frag
+package com.example.notesappv2.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
@@ -18,7 +17,7 @@ import com.example.notesappv2.adapter.NoteListAdapter
 import com.example.notesappv2.databinding.FragmentNoteListBinding
 import com.example.notesappv2.model.NoteModel
 import com.example.notesappv2.utils.NetworkUtils
-import com.example.notesappv2.vm.NoteListViewModel
+import com.example.notesappv2.viewmodel.NoteListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/noteListFragment"
-        android:name="com.example.notesappv2.frag.NoteListFragment"
+        android:name="com.example.notesappv2.fragment.NoteListFragment"
         android:label="fragment_note_list"
         tools:layout="@layout/fragment_note_list">
 
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/noteAddFragment"
-        android:name="com.example.notesappv2.frag.NoteAddFragment"
+        android:name="com.example.notesappv2.fragment.NoteAddFragment"
         android:label="fragment_note_add"
         tools:layout="@layout/fragment_note_add">
 
@@ -41,7 +41,7 @@
 
     <dialog
         android:id="@+id/searchNoteFragment"
-        android:name="com.example.notesappv2.frag.SearchNoteFragment"
+        android:name="com.example.notesappv2.fragment.SearchNoteFragment"
         android:label="fragment_search_note"
         tools:layout="@layout/fragment_search_note">
         <action

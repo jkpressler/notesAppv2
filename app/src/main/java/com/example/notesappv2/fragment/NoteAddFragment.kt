@@ -1,4 +1,4 @@
-package com.example.notesappv2.frag
+package com.example.notesappv2.fragment
 
 import android.os.Bundle
 import android.text.Editable
@@ -16,7 +16,7 @@ import com.example.notesappv2.R
 import com.example.notesappv2.databinding.FragmentNoteAddBinding
 import com.example.notesappv2.model.NoteModel
 import com.example.notesappv2.utils.DateFormatter
-import com.example.notesappv2.vm.NoteListViewModel
+import com.example.notesappv2.viewmodel.NoteListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.*
 

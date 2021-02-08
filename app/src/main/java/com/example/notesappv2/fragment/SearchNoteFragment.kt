@@ -1,4 +1,4 @@
-package com.example.notesappv2.frag
+package com.example.notesappv2.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,7 +14,7 @@ import androidx.transition.TransitionInflater
 import com.example.notesappv2.R
 import com.example.notesappv2.databinding.FragmentSearchNoteBinding
 import com.example.notesappv2.adapter.NoteListAdapter
-import com.example.notesappv2.vm.NoteListViewModel
+import com.example.notesappv2.viewmodel.NoteListViewModel
 
 
 class SearchNoteFragment : DialogFragment() {

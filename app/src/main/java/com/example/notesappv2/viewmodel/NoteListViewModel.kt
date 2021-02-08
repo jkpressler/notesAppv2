@@ -1,4 +1,4 @@
-package com.example.notesappv2.vm
+package com.example.notesappv2.viewmodel
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
